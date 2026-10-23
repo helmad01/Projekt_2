@@ -1,0 +1,73 @@
+* {
+    font-family: inter, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+h1 {
+    font-size: 48px;
+    color: #1a1a1a;
+}
+
+h2 {
+    font-size: 40px;
+    color: #1a1a1a;
+}
+
+h3 {
+    font-size: 24px;
+    color: #1a1a1a;
+}
+
+h4 {
+    font-size: 20px;
+    color: #1a1a1a;
+}
+
+h5 {
+    font-size: 18px;
+    color: #1a1a1a;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #FAF8F2;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 50px;
+}
+
+li a {
+    text-decoration: none;
+}
+
+li a h5 {
+    font-weight: lighter;
+}
+
+.udforsk-emner {
+    background-color: #DDE8ED;
+}
+
+.læs-guides {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.grøn-ikonbillede {
+    background-color: #526B49BF; /*To sidste cifre i hexkoden gør opacity=75%*/
+    border-radius: 50%;
+}
+
+.blå-ikonbillede {
+    background-color: #16324FBF;
+    border-radius: 50%;
+}

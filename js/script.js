@@ -12,7 +12,7 @@ const openNav = () => {
     bars.setAttribute('aria-expanded', expanded ? 'false' : 'true');
     /*aria-label*/
     const label = bars.getAttribute('aria-label') === 'åben navigation';
-    bars.setAttribute('aria-label', label ? 'luk navigation' : 'åben navigation');
+    bars.setAttribute('aria-label', label ? 'luk navigation' : 'åbn menu');
 
 }
 

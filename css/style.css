@@ -10,14 +10,14 @@ body {
 
 /*Eyebrow tekst*/
 .eyebrow {
-    color: #526B49;
+    color: #394B33;
     font-size: 14px;
     font-weight: bold;
     margin: 20px 10px 0 10px;
 }
 
 .eyebrow-lille {
-    color: #526B49;
+    color: #394B33;
     font-size: 12px;
     font-weight: bold;
     margin: 10px 10px 0 10px;
@@ -47,7 +47,7 @@ h3 {
 }
 
 a {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
 }
 
@@ -61,20 +61,83 @@ p {
     font-weight: 500;
 }
 
+
+
+/*Skip to main content*/
+.screen-reader-text {
+  position: absolute; /*Positions the link absolutely on the page, allowing it to be placed anywhere.*/
+  left: -9999px; /*Moves the link far off-screen to the left, making it invisible to sighted users.*/
+  z-index: 999; /*Sets a high z-index, ensuring that the link will be on top of other page elements if it becomes visible.*/
+  padding: 1em;
+  background-color: black;
+  color: white;
+  opacity: 0; /*Sets the link's opacity to 0, making it fully transparent and invisible.*/
+}
+
+.screen-reader-text:focus {
+  left: 50%; /* When the link receives focus (e.g., when a keyboard user tabs to it), it is repositioned horizontally to the centre of the screen.*/
+  transform: translateX(-50%); /*This centres the link horizontally by moving it back to the left by 50% of its own width.*/
+  opacity: 1; /*The link's opacity is set to 1, making it fully visible.*/
+}
+
+
+
 /*Navigationen*/
+.logo {
+    height: 45px;
+    margin: 2px 0 0 5px;
+}
+
 .main-header {
     background-color: #FAF8F2;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 60px;
-    margin: 0 0.8rem;
+    height: 55px;
 }
 
-.burgermenu {
-    height: 35px;
-    width: 35px;
+nav #bars {
+    display: flex;
+    background-color: transparent;
+    color: #1F1F1F;
+    font-size: 2.3em;
+    border: none;
+    cursor: pointer;
+  }
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
+
+.navigation ul {
+    display: none;
+    height: auto;
+    border-top: 2px solid #16324F;
+    flex-direction: column;
+  }
+
+.navigation li {
+    display: flex;
+  }
+
+.navigation a {
+    text-decoration: none;
+    color: darkslategray;
+    font-size: 20px;
+}
+
+.navigation .show {
+    display: flex;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #FAF8F2;
+    z-index: 1;
+  }
 
 /*Banner billedet*/
 img {
@@ -91,7 +154,7 @@ img {
     order: 1;
 }
 
-.banner div img {
+.banner-img {
     height: 160px;
     object-fit: cover;
     width: 100vw;
@@ -109,7 +172,7 @@ img {
 .cta-knap {
     display: inline-flex;
     padding: 12px;
-    background-color: #526B49;
+    background-color: #394B33;
     align-items: center;
     color: #FAF8F2;
     text-decoration: none;
@@ -119,6 +182,9 @@ img {
 }
 
 /*Sektion udforsk emner*/
+.udforsk-emner header h2{
+    margin-bottom: 15px;
+}
 .kategorier {
     display: flex;
     flex-direction: column;
@@ -156,7 +222,7 @@ img {
     justify-content: center;
 }
 
-.kategori-tekst h4 {
+.kategori-tekst h3 {
     margin: 0;
 }
 
@@ -175,6 +241,8 @@ img {
 .populære-guides {
     background-color: #DDE8ED;
     padding: 1px 0 20px 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .mest-læste {
@@ -191,13 +259,10 @@ img {
 }
 
 .ur-ikon {
-    width: 13px;
-    height: 13px;
-}
 
-.meste-læste div svg {
+    font-size: 12px;
     display: flex;
-    justify-content: end;
+    align-items: center;
 }
 
 .mest-læste-guide {
@@ -205,6 +270,11 @@ img {
     justify-content: space-between;
     align-items: center;
     margin: 0 10px 0 0;
+    text-decoration: none;
+}
+
+.mest-læste-guide div {
+    width: 85%;
 }
 
 .divider {
@@ -212,6 +282,22 @@ img {
     border-style: solid;
     border-width: 1px;
     margin: 0 10px 5px 10px;
+}
+
+.mood-img-container {
+    width: 100%;
+    height: 130px;
+    overflow: hidden;
+    order: -1;
+}
+
+.mood-img {
+    height: 130px;
+    object-fit: cover;
+    object-position: 10% 90%;
+    width: 100vw;
+    filter: brightness(80%);
+    transform: scale(1.1) translateX(-4%); /*scale zoomer ind og translateX flytter et element vandret (X-aksen) uden at ændre dets oprindelige plads i layoutet*/
 }
 
 /*Sektion kontakt og følg*/
@@ -269,12 +355,17 @@ margin: 10px;
 .so-me a i {
     width: 40px;
     height: 40px;
+    font-size: 22px;
     background-color: #16324FCC; /*Sidste 2 cifre = 80% opacity*/
     color: #FAF8F2;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+}
+
+.so-me a {
+    text-decoration: none;
 }
 
 .so-me {
@@ -288,6 +379,65 @@ margin: 10px;
 /*Footer*/
 footer{
     background-color: #16324F;
+    padding-top: 10px;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5px 5px 10px;
+
+}
+
+.logo-foot {
+    height: 30px;
+}
+
+.so-me-foot {
+    gap: 10px;
+}
+
+.so-me-foot a i {
+    width: 25px;
+    height: 25px;
+    color: #FAF8F2;
+    background-color: #3E566F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.so-me-foot a {
+    text-decoration: none;
+}
+
+.footer-divider {
+    color: #FAF8F2;
+    border-style: solid;
+    border-width: 1px;
+    margin: 0 10px 5px 10px;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+    justify-content: flex-start;
+    margin: 10px 10px;
+    padding: 0;
+}
+
+footer nav ul li a {
+    color: #FAF8F2;
+    font-size: 14px;
+}
+
+.copyright {
+    color: #FAF8F2;
+    font-size: 12px;
+    padding: 10px 0;
 }
 
 

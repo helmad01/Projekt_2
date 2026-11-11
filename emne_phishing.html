@@ -3,18 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guide om phishing</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Phishing</title>
+    <link rel="stylesheet" href="css/emne.css">
     <script src="https://kit.fontawesome.com/8beb0ee175.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="js/script.js" defer></script>
 </head>
+
+
 <body>
+    <a class="screen-reader-text" href="#hovedindhold">Skip til hovedindhold</a>
+
     <header class="main-header">
-        <a href="/index.html">
-            <img src="#" alt="Logo">
-        </a>
-        <a href="#">
-            <svg class="burgermenu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu preview-icon"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>
-        </a>
+        <nav class="navigation">
+            <a href="index.html">
+                <img class="logo" src="img/projekt-2-logo.png" alt="DigitaltTryg logo">
+            </a>
+            <button id="bars" aria-expanded="false" aria-controls="menu" aria-label="åbn menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul id="menu">
+                <li><a class="active" href="index.html">Forside</a></li>
+                <li><a href="emne_phishing.html">Viden & Guides</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
     </header>
+
+
+
+
+    <main id="hovedindhold">
+        <section class="banner">
+            <div class="intro-tekst">
+                <header>
+                    <p class="eyebrow">ONLINE SIKKERHED - PHISHING</p>
+                    <h1>Mange unge fanges af phishing - er du en af dem?</h1>
+                </header>
+                <p class="lead-tekst">3 ud af 20 af ofrene for digital svindel er unge. Ønsker du ikke at være en del af dette, er der her en guide til at genkende mistænkelige beskeder og links, inden du trykker.</p>
+            </div>
+            <img class="banner-img" src="img/lady-with-laptop-on-outlook.png" alt="" >
+        </section>
+
+
+
+        <section class="emne">
+            <div>
+                <header>
+                    <p class="eyebrow">OVERORDNET OM EMNE</p>
+                    <h2>Hvad er phishing?</h2>
+                </header>
+                <p class="phishing-text">Phishing er et forsøg på at narre dig til at dele personlige oplysninger, fx. adgangkoder eller betalingsoplysninger. Dette gør de gennem falske beskeder eller hjemmesider, hvor IT-kriminelle udgiver sig for at komme fra en troværdig organisation, eksempelvis en bank.<br><br>
+                Phishing-mails bliver ofte sendt til mange mennesker på en gang, hvor deres mål er, at lokke folk til at overføre penge til de kriminelles egen bankkonti, eller trykke på et link, der eksempelvis kan låse din computer.</p>
+            </div>
+            <img class="phishing-ikon" src="img/phishing-ikon.png" alt="" >
+        </section>
+            
+
+
+        <section class="tips-container">
+            <header>
+                <p class="eyebrow">TIPS TIL EMNE</p>
+                <h2>Tegn, du skal være opmærksom på</h2>
+            </header>
+            <p class="tips-text">Nedenfor er en hurtig guide til, hvordan du kan undgå phishing i din hverdag med nogle simple tips.</p>
+            <div class="tips">
+                <div>
+                    <div class="ikon">
+                        <i aria-hidden="true" data-lucide="check"></i>
+                    </div>
+                    <h3>Kontrollér afsenderen</h3>
+                    <p>Passer adressen med den organisation/virksomhed, beskeden påstår at komme fra?</p>
+                </div>
+                    
+                <div>
+                    <div class="ikon">
+                        <i aria-hidden="true" data-lucide="check"></i>
+                    </div>
+                    <h3>Vær opmærksom på pres</h3>
+                    <p>Vil afsenderen have dig til at handle straks, for at undgå en trussel eller få en gevinst?</p>
+                </div>
+
+                <div>
+                    <div class="ikon">
+                        <i aria-hidden="true" data-lucide="check"></i>
+                    </div>
+                    <h3>Undersøg links</h3>
+                    <p>Hvis et link ser mistænkeligt ud, så gå i stedet selv ind på organisationens officielle hjemmeside.</p>
+                </div>
+
+                <div>
+                    <div class="ikon">
+                        <i aria-hidden="true" data-lucide="check"></i>
+                    </div>
+                    <h3>Kontakt via opkald</h3>
+                    <p>Hvis du stadig er i tvivl, om en mail eller besked er falsk, så tag 2 minutter til at ringe til afsenderen og få telefonisk bekræftelse.</p>
+                </div>
+
+                <div>
+                    <div class="ikon">
+                        <i aria-hidden="true" data-lucide="check"></i>
+                    </div>
+                    <h3>Kig på sproget</h3>
+                    <p>Hold øje med sproget. Phishing-beskeder kan være maskinoversatte tekster, så tjek for stavefejl.</p>
+                </div>
+
+                <div>
+                    <div class="ikon">
+                        <i aria-hidden="true" data-lucide="check"></i>
+                    </div>
+                    <h3>Forebyg mod svindlere</h3>
+                    <p>Forebyg mod phishing og andre former for svindel med totrinsgodkendelse, så kan kriminelle ikke logge ind, selv hvis de stjæler din adgangskode.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section>
+            <header>
+                <p class="eyebrow">LILLE HUSKEREGEL</p>
+                <h2>Husk</h2>
+            </header>
+            <p>Del aldrig dine adgangskoder eller engangskoder med andre uden at være 100% sikker på afsenderen, heller ikke hvis en besked eller mail skriver, at du skal.</p>
+        </section>
+
+
+
+        <section>
+            <div>
+                <header>
+                    <p class="eyebrow">MERE SOM DETTE</p>
+                    <h2>Relaterede guides</h2>
+                </header>
+                <div>
+                    <a href="#" class="mest-læste-guide" aria-label="Læs guiden: Sådan beskytter du dine adgangskoder. 4 minutters læsetid">
+                        <div>
+                            <h3>Sådan beskytter du dine adgangskoder</h3>
+                            <p><i class="fa-regular fa-clock ur-ikon" aria-hidden="true"></i> 4 min. læsetid</p>
+                        </div>
+                        <i aria-hidden="true" data-lucide="arrow-right"></i>
+                    </a>
+
+                    <div class="divider"></div>
+
+                    <a href="#" class="mest-læste-guide" aria-label="Læs guiden: Hvad gør du efter et svindelforsøg?. 3 minutters læsetid">
+                        <div>
+                            <h3>Hvad gør du efter et svindelforsøg?</h3>
+                            <p><i class="fa-regular fa-clock ur-ikon" aria-hidden="true"></i> 3 min. læsetid</p>  
+                        </div>
+                        <i aria-hidden="true" data-lucide="arrow-right"></i>
+                    </a>
+
+                    <div class="divider"></div>
+                </div>
+            </div>    
+            <div class="mood-img-container">
+                <img class="mood-img" src="#" alt="" >
+            </div>
+        </section>
+    </main>
+
+    
+
+    <footer>
+        <div>
+            <a href="/index.html">
+                <img class="logo-foot" src="img/projekt-2-logo-footer.png" alt="DigitaltTryg logo">
+            </a>
+            <div class="so-me-foot">
+                <a aria-label="instagram" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a aria-label="youtube" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                <a aria-label="linkedin" href="https://dk.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a aria-label="tiktok" href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+        
+        <div class="footer-divider"></div>
+        <nav>
+            <ul>
+                <li><a href="#">Om os</a></li>
+                <li><a href="/kontakt.html">Kontakt</a></li>
+                <li><a href="#">Privatlivspolitik</a></li>
+            </ul>
+        </nav>
+        <p class="copyright">©2026 "DigitaltTryg". Alle rettigheder forbeholdes.</p>
+    </footer>
+
+
+
+    <script>lucide.createIcons();</script>
 </body>
 </html>

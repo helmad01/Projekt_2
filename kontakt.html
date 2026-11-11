@@ -4,17 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/kontakt.css">
     <script src="https://kit.fontawesome.com/8beb0ee175.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="js/script.js" defer></script>
 </head>
+
+
 <body>
+    <a class="screen-reader-text" href="#hovedindhold">Skip til hovedindhold</a>
+
     <header class="main-header">
-        <a href="/index.html">
-            <img src="#" alt="Logo">
-        </a>
-        <a href="#">
-            <svg class="burgermenu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu preview-icon"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>
-        </a>
+        <nav class="navigation">
+            <a href="index.html">
+                <img class="logo" src="img/projekt-2-logo.png" alt="DigitaltTryg logo">
+            </a>
+            <button id="bars" aria-expanded="false" aria-controls="menu" aria-label="åbn menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul id="menu">
+                <li><a class="active" href="index.html">Forside</a></li>
+                <li><a href="emne_phishing.html">Viden & Guides</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
     </header>
+
+
+
+
+    <main id="hovedindhold">
+        <img class="banner-img" src="img/overlooking-people-in-office.jpg" alt="" >
+        
+        
+        <section>
+            <header>
+                <p class="eyebrow">BRUG FOR HJÆLP?</p>
+                <h1>Kontakt os</h1>
+            </header>
+            <p>Har du spørgsmål, brug for hjælp til en guide eller vil du give os feedback, så skriv endelig en besked. Vi vil til hver en tid gøre vores bedste for at give et tilfredsstillende svar.</p>
+
+            <div>
+                <h2>Send os en besked</h2>
+                <form>
+                    <label for="navn">Fulde navn *</label>
+                    <input type="text" id="navn" placeholder="Skriv dit navn...">
+
+                    <label for="mail">E-mail *</label>
+                    <input type="email" id="mail" placeholder="Skriv din e-mail...">
+
+                    <div>
+                        <label for="emne">Emne</label>
+                        <select name="select" id="emne">
+                            <option value="0" selected disabled>Vælg emne</option>
+                            <option value="1">Spørgsmål</option>
+                            <option value="2">Feedback og forslag</option>
+                            <option value="3">Rapportér en fejl</option>
+                            <option value="4">Hjælp og vejledning</option>
+                            <option value="5">Andet</option>
+                        </select>
+                    </div>
+
+                    <label for="besked">Din besked *</label>
+                    <textarea name="besked" id="besked" rows="6" placeholder="Skriv din besked..."></textarea>
+
+                    <button type="submit">Send besked</button>
+                </form>
+            </div>
+        </section>
+        
+
+
+        <section>
+            <h2>Kontaktinformation</h2>
+            <div>
+                <i aria-hidden="true" data-lucide="mail"></i>
+                <h3>E-mail</h3>
+                <p><a href="mailto:digitalttryg@noget.com">digitalttryg@noget.com</a></p>
+            </div>
+
+            <div>
+                <i aria-hidden="true" data-lucide="phone"></i>
+                <h3>Telefon</h3>
+                <p><a href="tel:12345678">+45 12345678</a></p>
+            </div>
+
+            <div>
+                <i aria-hidden="true" data-lucide="map-pin"></i>
+                <h3>Adresse</h3>
+                <p>Havneparken 1, 6000 Kolding</p>
+            </div>
+        </section>
+    </main>
+
+    
+
+    <footer>
+        <div>
+            <a href="/index.html">
+                <img class="logo-foot" src="img/projekt-2-logo-footer.png" alt="DigitaltTryg logo">
+            </a>
+            <div class="so-me-foot">
+                <a aria-label="instagram" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a aria-label="youtube" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                <a aria-label="linkedin" href="https://dk.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a aria-label="tiktok" href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+        
+        <div class="footer-divider"></div>
+        <nav>
+            <ul>
+                <li><a href="#">Om os</a></li>
+                <li><a href="/kontakt.html">Kontakt</a></li>
+                <li><a href="#">Privatlivspolitik</a></li>
+            </ul>
+        </nav>
+        <p class="copyright">©2026 "DigitaltTryg". Alle rettigheder forbeholdes.</p>
+    </footer>
+
+
+
+    <script>lucide.createIcons();</script>
 </body>
 </html>

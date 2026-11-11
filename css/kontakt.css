@@ -1,0 +1,350 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: inter, sans-serif;
+    background-color: #FAF8F2;
+}
+
+/*Eyebrow tekst*/
+.eyebrow {
+    color: #394B33;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 20px 10px 0 10px;
+}
+
+.eyebrow-lille {
+    color: #394B33;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 10px 10px 0 10px;
+}
+
+/*Overskrifter og links' skriftstørrelse og tykkelse*/
+h1, h2, h3, h4, h5, h6, a, p {
+    color: #1F1F1F;
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0 10px 10px 10px;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 10px 5px 10px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 5px 10px;
+}
+
+a {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 14px;
+    margin: 5px 10px;
+}
+
+.h2-lille {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+
+/*Skip to main content*/
+.screen-reader-text {
+  position: absolute; /*Positions the link absolutely on the page, allowing it to be placed anywhere.*/
+  left: -9999px; /*Moves the link far off-screen to the left, making it invisible to sighted users.*/
+  z-index: 999; /*Sets a high z-index, ensuring that the link will be on top of other page elements if it becomes visible.*/
+  padding: 1em;
+  background-color: black;
+  color: white;
+  opacity: 0; /*Sets the link's opacity to 0, making it fully transparent and invisible.*/
+}
+
+.screen-reader-text:focus {
+  left: 50%; /* When the link receives focus (e.g., when a keyboard user tabs to it), it is repositioned horizontally to the centre of the screen.*/
+  transform: translateX(-50%); /*This centres the link horizontally by moving it back to the left by 50% of its own width.*/
+  opacity: 1; /*The link's opacity is set to 1, making it fully visible.*/
+}
+
+
+
+/*Navigationen*/
+.logo {
+    height: 45px;
+    margin: 2px 0 0 5px;
+}
+
+.main-header {
+    background-color: #FAF8F2;
+    display: flex;
+    align-items: center;
+    height: 55px;
+}
+
+nav #bars {
+    display: flex;
+    background-color: transparent;
+    color: #1F1F1F;
+    font-size: 2.3em;
+    border: none;
+    cursor: pointer;
+  }
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navigation ul {
+    display: none;
+    height: auto;
+    border-top: 2px solid #16324F;
+    flex-direction: column;
+    font-size: 24px; 
+  }
+
+.navigation li {
+    display: flex;
+    padding-left: 5px;
+    border: 1px solid #1F1F1F30;
+    padding: 4px;
+  }
+
+.navigation a {
+    text-decoration: none;
+    color: #1F1F1F;
+    font-size: 20px;
+}
+
+.navigation .show {
+    display: flex;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #FAF8F2;
+    z-index: 1;
+  }
+
+
+
+/*Banner billede*/
+img {
+    width: 100%;
+}
+
+
+
+/*Footer*/
+footer{
+    background-color: #16324F;
+    padding-top: 10px;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5px 5px 10px;
+
+}
+
+.logo-foot {
+    height: 30px;
+}
+
+.so-me-foot {
+    gap: 10px;
+}
+
+.so-me-foot a i {
+    width: 25px;
+    height: 25px;
+    color: #FAF8F2;
+    background-color: #3E566F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.so-me-foot a {
+    text-decoration: none;
+}
+
+.footer-divider {
+    color: #FAF8F2;
+    border-style: solid;
+    border-width: 1px;
+    margin: 0 10px 5px 10px;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+    justify-content: flex-start;
+    margin: 10px 10px;
+    padding: 0;
+}
+
+footer nav ul li a {
+    color: #FAF8F2;
+    font-size: 14px;
+}
+
+.copyright {
+    color: #FAF8F2;
+    font-size: 12px;
+    padding: 10px 0;
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+/*Tilpasning til forskellige skærmstørrelser*/
+@media screen and (max-width:335.5px) {
+    
+}
+
+
+
+/*Tablet Version - Kun små ændringer nødvendige*/
+@media screen and (min-width: 426px) {
+    
+}
+
+
+
+/*Desktop Version*/
+@media screen and (min-width: 769px) {
+    /*Eyebrow tekst*/
+    .eyebrow {
+        font-size: 20px;
+        font-weight: 700;
+        margin: 30px 20px 0 30px;
+    }
+
+    .eyebrow-lille {
+        font-size: 18px;
+        font-weight: 700;
+        margin: 10px 10px 0 30px;
+    }
+
+    /*Overskrifter og links' skriftstørrelse og tykkelse*/
+    h1 {
+        font-size: 48px;
+        margin: 0 0 10px 30px;
+    }
+
+    h2 {
+        font-size: 38px;
+        margin: 0 10px 5px 30px;
+    }
+
+    h3 {
+        font-size: 24px;
+        margin: 5px 30px;
+    }
+
+    a {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 18px;
+        margin: 5px 30px;
+    }
+
+    .h2-lille {
+        font-size: 24px;
+    }
+
+
+    /*Navigation*/
+    nav #bars {
+        display: none;
+    }
+
+    .navigation ul {
+        display: flex;
+        flex-direction: row;
+        height: 60px;
+        gap: 15px;
+        padding-right: 15px;
+        border-top: none;
+    }
+
+    .navigation li {
+        border: none;
+        justify-content: flex-end;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navigation ul li a {
+        display: flex;
+        align-items: center;
+    }
+
+    .navigation ul li:nth-child(3) a  {
+        text-decoration: underline 1.5px solid #1F1F1F;
+        text-underline-offset: 5px;
+    }
+
+
+
+
+    /*Footer*/
+    footer {
+        padding-top: 20px;
+    }
+
+    footer div {
+        margin: 0 30px 10px 30px;
+    }
+
+    .so-me-foot {
+        margin: 0;
+    }
+
+    .logo-foot {
+        height: 35px;
+    }
+
+    .so-me-foot a i {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer-divider {
+        margin: 0 30px 5px 30px;
+    }
+
+    footer nav ul {
+        margin: 15px 30px;
+    }
+}

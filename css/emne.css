@@ -171,7 +171,7 @@ img {
 .lead-tekst {
     font-size: 18px;
     font-weight: 400;
-    margin: 0 10px 20px 10px;
+    margin-bottom: 20px;
 }
 
 
@@ -194,16 +194,31 @@ img {
 /*Sektion - Tips*/
 .tips-container {
     background-color: #DDE8ED;
-    display: flex;
-    flex-direction: column;
 }
 
 .tips-text {
     margin-bottom: 10px;
 }
 
-.tips-container .ikon {
+.tips {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 20px;
+}
+
+.tips div {
+    background-color: #FAF8F2;
+    margin: 0 10px 0 10px;
+    border-radius: 12px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.tips .ikon {
     width: 50px;
+    min-width: 50px;
     height: 50px;
     background-color: #16324FCC; /*Sidste 2 cifre = 80% opacity*/
     color: #FAF8F2;
@@ -218,6 +233,93 @@ img {
     stroke-width: 1.3px;
     width: 35px;
     height: 35px;
+}
+
+div .tip-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 0 10px 0 0;
+}
+
+.tip-text h3 {
+    margin: 0;
+}
+
+.tip-text p {
+    display: flex;
+    padding: 0;
+    margin-top: 5px;
+}
+
+
+
+/*Sektion - Lille huskeregel*/
+.husk {
+    padding-bottom: 20px;
+}
+
+
+
+/*Sektion - Relaterede guides*/
+.relaterede {
+    background-color: #DDE8ED;
+    padding: 1px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.guides {
+    background-color: #DDE8ED;
+    display: flex;
+    flex-direction: column;
+}
+
+.guides div p {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 3px;
+}
+
+.ur-ikon {
+
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.relateret-guide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px 0 0;
+    text-decoration: none;
+}
+
+.relateret-guide div {
+    width: 85%;
+}
+
+.divider {
+    color: #1F1F1F;
+    border-style: solid;
+    border-width: 1px;
+    margin: 0 10px 5px 10px;
+}
+
+.mood-img-container {
+    width: 100%;
+    height: 130px;
+    order: -1;
+}
+
+.mood-img {
+    height: 130px;
+    object-fit: cover;
+    width: 100%;
+    filter: brightness(80%);
 }
 
 

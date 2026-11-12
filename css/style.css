@@ -202,6 +202,7 @@ img {
     border-radius: 12px;
     height: 60px;
     display: flex;
+    align-items: center;
 }
 
 .kategorier .ikon {
@@ -218,11 +219,6 @@ img {
 
 .ikon svg {
     stroke-width: 1.3px;
-}
-
-.kategorier div {
-    display: flex;
-    align-items: center;
 }
 
 .kategorier a {
@@ -345,6 +341,10 @@ div .kategori-tekst {
     border-color: #16324F;
     border-style: solid;
     border-width: 1px;
+}
+
+.kontakt p {
+    display: none;
 }
 
 /*Følg os*/
@@ -720,6 +720,10 @@ footer nav ul li a {
     .kontakt div a {
         margin: 15px 30px 15px 30px;
     }
+
+    .kontakt p {
+    display: flex;
+}
 
 
 

@@ -36,15 +36,18 @@
     <main id="hovedindhold">
         <img class="banner-img" src="img/overlooking-people-in-office.jpg" alt="" >
         
-        
-        <section>
+        <section class="kontakt-text">
             <header>
                 <p class="eyebrow">BRUG FOR HJÆLP?</p>
                 <h1>Kontakt os</h1>
             </header>
             <p>Har du spørgsmål, brug for hjælp til en guide eller vil du give os feedback, så skriv endelig en besked. Vi vil til hver en tid gøre vores bedste for at give et tilfredsstillende svar.</p>
+        </section>
 
-            <div>
+
+        
+        <section class="kontakt">
+            <div class="kontaktform">
                 <h2>Send os en besked</h2>
                 <form>
                     <label for="navn">Fulde navn *</label>
@@ -69,30 +72,41 @@
                     <textarea name="besked" id="besked" rows="6" placeholder="Skriv din besked..."></textarea>
 
                     <button type="submit">Send besked</button>
-                </form>
+                </form>    
             </div>
-        </section>
-        
+            
 
+            <div class="kontaktinformation">
+                <h2>Kontaktinformation</h2>
+                <div class="info">
+                    <div class="ikon">
+                    <i aria-hidden="true" data-lucide="mail"></i> 
+                    </div>
+                    <div class="info-text">
+                        <h3>E-mail</h3>
+                        <p><a href="mailto:digitalttryg@noget.com">digitalttryg@noget.com</a></p>    
+                    </div>
+                </div>
 
-        <section>
-            <h2>Kontaktinformation</h2>
-            <div>
-                <i aria-hidden="true" data-lucide="mail"></i>
-                <h3>E-mail</h3>
-                <p><a href="mailto:digitalttryg@noget.com">digitalttryg@noget.com</a></p>
-            </div>
+                <div class="info">
+                    <div class="ikon">
+                    <i aria-hidden="true" data-lucide="phone"></i> 
+                    </div>
+                    <div class="info-text">
+                        <h3>Telefon</h3>
+                        <p><a href="tel:12345678">+45 12345678</a></p>
+                    </div>
+                </div>
 
-            <div>
-                <i aria-hidden="true" data-lucide="phone"></i>
-                <h3>Telefon</h3>
-                <p><a href="tel:12345678">+45 12345678</a></p>
-            </div>
-
-            <div>
-                <i aria-hidden="true" data-lucide="map-pin"></i>
-                <h3>Adresse</h3>
-                <p>Havneparken 1, 6000 Kolding</p>
+                <div class="info">
+                    <div class="ikon">
+                    <i aria-hidden="true" data-lucide="map-pin"></i> 
+                    </div>
+                    <div class="info-text">
+                        <h3>Adresse</h3>
+                        <p>Havneparken 1, 6000 Kolding</p>    
+                    </div>
+                </div>
             </div>
         </section>
     </main>

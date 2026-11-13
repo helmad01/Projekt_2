@@ -146,9 +146,110 @@ nav #bars {
 
 
 /*Banner billede*/
-img {
+.banner-img {
     width: 100%;
+    height: 160px;
+    object-fit: cover;
+    filter: brightness(85%);
 }
+
+
+/*Sektion - Kontakt text*/
+.kontakt-text {
+    padding-bottom: 20px;
+}
+
+
+
+/*Sektion - Kontakt*/
+.kontakt {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Div - Send besked*/
+.kontaktform {
+  border-radius: 5px;
+  background-color: #FAF8F2;
+  border: 1px solid #16324F;
+  padding: 10px;
+  margin: 20px 10px 20px 10px;
+}
+
+.kontaktform h2 {
+    margin: 0;
+}
+
+input[type=text], input[type=email], select, textarea {
+	width: 100%;
+	padding: 0.675em 1em 0.675em 0.3em;
+	border: 1px solid #16324F;
+    background-color: #DDE8ED;
+	border-radius: 4px;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+}
+
+select {
+	padding: 0.675em 1em 0.675em 0.3em;
+	appearance: none;
+	cursor: pointer;
+}
+
+form button {
+	background-color: #394B33;
+	color: #FAF8F2;
+	padding: 0.8em 1em;
+	border: none;
+	border-radius: 4px;
+	width: 100%;
+	font-size: 18px;
+}
+
+/*Div - Kontaktoplysninger*/
+.kontakt .kontaktinformation {
+    background-color: #DDE8ED;
+    order: -1;
+    padding-bottom: 10px;
+}
+
+.kontaktinformation .ikon {
+    width: 45px;
+    height: 45px;
+    background-color: #16324FCC; 
+    color: #FAF8F2;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ikon svg {
+    stroke-width: 1.3px;
+    width: 30px;
+    height: 30px;
+}
+
+.kontaktinformation h2 {
+    padding: 20px 0 10px 0;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+}
+
+.info-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.kontaktinformation h3 {
+    margin: 0 10px;
+}
+
 
 
 

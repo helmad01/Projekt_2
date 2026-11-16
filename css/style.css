@@ -143,6 +143,12 @@ nav #bars {
     z-index: 1;
   }
 
+.søg {
+    display: none;
+}
+
+
+
 /*Banner billedet*/
 img {
     max-width: 100%;
@@ -573,7 +579,7 @@ footer nav ul li a {
         padding-bottom: 5px;
     }
 
-    
+
 }
 
 
@@ -638,7 +644,7 @@ footer nav ul li a {
         display: flex;
         flex-direction: row;
         height: 60px;
-        gap: 15px;
+        gap: 30px;
         padding-right: 15px;
         border-top: none;
     }
@@ -661,6 +667,20 @@ footer nav ul li a {
     .navigation a.active {
         text-decoration: underline 1.5px solid #1F1F1F;
         text-underline-offset: 5px;
+    }
+
+    .søg {
+        display: flex;
+        margin: 0 30px 0 30px;
+    }
+
+    .søg input {
+        border: 1px solid #16324F;
+        border-radius: 12px;
+        height: 38px;
+        width: 300px;
+        font-size: 20px;
+        background-color: #DDE8ED;
     }
 
 

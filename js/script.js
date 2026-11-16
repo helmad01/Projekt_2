@@ -17,3 +17,29 @@ const openNav = () => {
 }
 
 bars.addEventListener("click", openNav);
+
+
+
+
+
+
+
+const bottomNavButton = document.querySelector("#menu-ikon");
+const bottomNavMenu = document.querySelector("#menuen");
+
+if (bottomNavButton && bottomNavMenu) {
+    const bottomNavIcon = bottomNavButton.querySelector("i");
+
+    const openBottomNav = () => {
+        bottomNavMenu.classList.toggle("show");
+
+        bottomNavIcon.classList.toggle("fa-bars");
+        bottomNavIcon.classList.toggle("fa-xmark");
+
+        const expanded = bottomNavButton.getAttribute("aria-expanded") === "true";
+        bottomNavButton.setAttribute("aria-expanded", expanded ? "false" : "true");
+        bottomNavButton.setAttribute("aria-label", expanded ? "åbn menu" : "luk menu");
+    };
+
+    bottomNavButton.addEventListener("click", openBottomNav);
+}

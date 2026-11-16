@@ -329,6 +329,7 @@ div .tip-text {
 footer{
     background-color: #16324F;
     padding-top: 10px;
+    padding-bottom: 55px;
 }
 
 footer div {
@@ -391,19 +392,80 @@ footer nav ul li a {
 
 
 
-
-
-
-/*Tilpasning til forskellige skærmstørrelser*/
-@media screen and (max-width:335.5px) {
-    
+/*Sticky bottom nav til mobilversion*/
+.mobil-bottom-nav {
+    display: none;
 }
 
 
 
-/*Tablet Version - Kun små ændringer nødvendige*/
-@media screen and (min-width: 426px) {
-    
+
+
+/*Tilpasning til forskellige skærmstørrelser*/
+
+/*Sticky bottom nav til mobil og tablet*/
+@media screen and (max-width:768px) {
+    .mobil-bottom-nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 55px;
+        background-color: #FAF8F2;
+        border-top: 2px solid #16324F;
+        z-index: 10;
+    }
+
+    .mobil-bottom-nav ul {
+        display: none;
+        height: auto;
+        border-top: 2px solid #16324F;
+        flex-direction: column;
+        font-size: 24px; 
+    }
+
+    .mobil-bottom-nav li {
+        display: flex;
+        padding-left: 5px;
+        border: 1px solid #1F1F1F30;
+        padding: 4px;
+    }
+
+    .mobil-bottom-nav a {
+        text-decoration: none;
+        color: #1F1F1F;
+        font-size: 20px;
+    }
+
+    .mobil-bottom-nav svg{
+        width: 37px;
+        height: 37px;
+    }
+
+    nav #menu-ikon {
+    display: flex;
+    background-color: transparent;
+    color: #1F1F1F;
+    font-size: 37px;
+    border: none;
+    cursor: pointer;
+  }
+
+    .mobil-bottom-nav .show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 55px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #FAF8F2;
+    z-index: 1;
+  }
 }
 
 
@@ -414,7 +476,8 @@ footer nav ul li a {
     .eyebrow {
         font-size: 20px;
         font-weight: 700;
-        margin: 30px 20px 0 30px;
+        padding: 30px 30px 0 30px;
+        margin: 0;
     }
 
     .eyebrow-lille {
@@ -446,6 +509,7 @@ footer nav ul li a {
     p {
         font-size: 18px;
         margin: 5px 30px;
+        padding: 0;
     }
 
     .h2-lille {
@@ -488,11 +552,159 @@ footer nav ul li a {
     }
 
 
+    /*Banner sektion*/
+    .banner .intro-tekst {
+    order: 0;
+    }
+
+    .banner {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .banner-img {
+        height: 310px;
+        width: 45%;
+        filter: brightness(100%);
+        margin-right: 40px;
+        border-radius: 20px;
+    }
+
+    .intro-tekst {
+        width: 45%;
+    }
+
+    .lead-tekst {
+        margin: 5px 10px 20px 30px;
+        font-weight: 500;
+        font-size: 24px;
+        padding: 0;
+    }
+
+
+    /*Sektion - Hvad er phishing?*/
+    .emne {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .phishing-ikon {
+        display: flex;
+        object-fit: cover;
+        height: 170px;
+        margin: 20px 40px 20px 30px;
+        align-items: center;
+        width: 25%;
+    }
+
+    .phishing-text {
+        margin-bottom: 30px;
+    }
+
+
+    /*Sektion - Tips*/
+    .tips-text {
+        margin-bottom: 30px;
+    }
+
+    .tips div {
+        background-color: #FAF8F2;
+        margin: 0 30px 0 30px;
+        border-radius: 12px;
+        height: 120px;
+        display: flex;
+        align-items: center;
+    }
+
+    .tips {
+        gap: 20px;
+        padding-bottom: 30px;
+    }
+    
+    .tips .ikon {
+        width: 70px;
+        min-width: 70px;
+        height: 70px;
+        background-color: #16324FCC;
+        color: #FAF8F2;
+        border-radius: 40px;
+        margin: 0 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ikon svg {
+        stroke-width: 1.5px;
+        width: 50px;
+        height: 50px;
+    }
+
+    div .tip-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        margin: 0 10px 0 0;
+    }
+
+    .tip-text p {
+        margin: 0;
+    }
+
+
+    /*Sektion - Relaterede*/
+    .mood-img-container {
+        order: 0;
+        width: 45%;
+        height: 220px;
+        overflow: hidden;
+        margin: auto 30px auto 0;
+        border-radius: 20px;
+    }
+
+    .mood-img {
+        width: 100%;
+        height: 220px;
+        object-position: 0 45%;
+        filter: brightness(100%);
+        transform: scale(1) translateX(0);
+    }
+
+    .relaterede {
+        padding: 30px 0 30px 0;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .relaterede-text {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .relaterede-text .eyebrow {
+        margin: 0;
+        padding-top: 0;
+    }
+
+    .ur-ikon {
+        font-size: 14px;
+    }
+
+    .divider {
+        margin-left: 30px;
+    }
+
 
 
     /*Footer*/
     footer {
         padding-top: 20px;
+        padding-bottom: 0;
     }
 
     footer div {
@@ -518,5 +730,9 @@ footer nav ul li a {
 
     footer nav ul {
         margin: 15px 30px;
+    }
+
+    .copyright {
+        margin-bottom: 0;
     }
 }

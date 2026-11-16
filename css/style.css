@@ -116,7 +116,6 @@ nav #bars {
     height: auto;
     border-top: 2px solid #16324F;
     flex-direction: column;
-    font-size: 24px; 
   }
 
 .navigation li {
@@ -125,6 +124,11 @@ nav #bars {
     border: 1px solid #1F1F1F30;
     padding: 4px;
   }
+
+.navigation li:hover {
+    transform: scale(1.01);
+    color: #16324F;
+}
 
 .navigation a {
     text-decoration: none;
@@ -145,6 +149,10 @@ nav #bars {
 
 .søg {
     display: none;
+}
+
+.søg:hover {
+    transform: scale(1.01);
 }
 
 
@@ -191,6 +199,11 @@ img {
     margin: 5px 10px 15px 10px;
 }
 
+.cta-knap:hover {
+    transform: scale(1.02);
+    background-color: #394B33F2;
+}
+
 /*Sektion udforsk emner*/
 .udforsk-emner header h2{
     margin-bottom: 15px;
@@ -207,7 +220,15 @@ img {
     margin-bottom: 20px;
 }
 
-.kategorier div {
+.kategorier a:hover {
+    transform: scale(1.02);
+}
+
+.kategorier > a > div:hover {
+    background-color: #d4dee4;
+}
+
+.kategorier > a > div {
     background-color: #DDE8ED;
     margin: 0 10px 0 10px;
     border-radius: 12px;
@@ -294,6 +315,11 @@ div .kategori-tekst {
     text-decoration: none;
 }
 
+.mest-læste-guide:hover {
+    transform: scale(1.01);
+    color: #16324F;
+}
+
 .mest-læste-guide div {
     width: 85%;
 }
@@ -354,6 +380,11 @@ div .kategori-tekst {
     border-width: 1px;
 }
 
+.kontakt div a:hover {
+    transform: scale(1.03);
+    background-color: #f7f5f1;
+}
+
 .kontakt > div > p {
     display: none;
 }
@@ -391,6 +422,10 @@ margin: 10px;
 
 .so-me a {
     text-decoration: none;
+}
+
+.so-me a:hover {
+    transform: scale(1.03);
 }
 
 .so-me {
@@ -439,6 +474,10 @@ footer div {
     text-decoration: none;
 }
 
+.so-me-foot a:hover {
+    transform: scale(1.04);
+}
+
 .footer-divider {
     color: #FAF8F2;
     border-style: solid;
@@ -455,9 +494,17 @@ footer nav ul {
     padding: 0;
 }
 
+footer nav ul li:hover {
+    transform: scale(1.02);
+}
+
 footer nav ul li a {
     color: #FAF8F2;
     font-size: 14px;
+}
+
+footer nav ul li a:hover {
+    color: #DDE8ED;
 }
 
 .copyright {
@@ -742,7 +789,7 @@ footer nav ul li a {
         margin-bottom: 40px;
     }
 
-    .kategorier div {
+    .kategorier > a > div {
         height: 120px;
         border-radius: 20px;
         margin: 0;

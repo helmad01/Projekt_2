@@ -102,7 +102,7 @@ nav #bars {
     font-size: 2.3em;
     border: none;
     cursor: pointer;
-  }
+}
 
 .navigation {
     display: flex;
@@ -117,14 +117,19 @@ nav #bars {
     border-top: 2px solid #16324F;
     flex-direction: column;
     font-size: 24px; 
-  }
+}
 
 .navigation li {
     display: flex;
     padding-left: 5px;
     border: 1px solid #1F1F1F30;
     padding: 4px;
-  }
+}
+
+.navigation li:hover {
+    transform: scale(1.01);
+    color: #16324F;
+}
 
 .navigation a {
     text-decoration: none;
@@ -141,10 +146,14 @@ nav #bars {
     width: 100%;
     background-color: #FAF8F2;
     z-index: 1;
-  }
+}
 
 .søg {
     display: none;
+}
+
+.søg:hover {
+    transform: scale(1.01);
 }
 
 
@@ -194,6 +203,10 @@ input[type=text], input[type=email], select, textarea {
 	margin-bottom: 1em;
 }
 
+input[type=text]:hover, input[type=email]:hover, select:hover, textarea:hover {
+    transform: scale(1.01);
+}
+
 select {
 	padding: 0.675em 1em 0.675em 0.3em;
 	appearance: none;
@@ -209,6 +222,13 @@ form button {
 	width: 100%;
 	font-size: 18px;
 }
+
+form button:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+    background-color: #394B33F2;
+}
+
 
 /*Div - Kontaktoplysninger*/
 .kontakt .kontaktinformation {
@@ -254,6 +274,10 @@ form button {
     margin: 0 10px;
 }
 
+.info-text p:has(a):hover {
+    transform: scale(1.01);
+    color: #16324F;
+}
 
 
 
@@ -295,6 +319,10 @@ footer div {
     text-decoration: none;
 }
 
+.so-me-foot a:hover {
+    transform: scale(1.04);
+}
+
 .footer-divider {
     color: #FAF8F2;
     border-style: solid;
@@ -311,9 +339,17 @@ footer nav ul {
     padding: 0;
 }
 
+footer nav ul li:hover {
+    transform: scale(1.02);
+}
+
 footer nav ul li a {
     color: #FAF8F2;
     font-size: 14px;
+}
+
+footer nav ul li a:hover {
+    color: #DDE8ED;
 }
 
 .copyright {

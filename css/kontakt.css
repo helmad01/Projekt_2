@@ -446,6 +446,12 @@ footer nav ul li a {
 
 
     /*Navigation*/
+    .main-header {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+    
     nav #bars {
         display: none;
     }
@@ -484,7 +490,7 @@ footer nav ul li a {
     /*Banner billede*/
     .banner-img {
         height: 300px;
-        filter: brightness(100%);
+        filter: brightness(85%);
     }
 
 

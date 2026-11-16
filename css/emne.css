@@ -403,6 +403,22 @@ footer nav ul li a {
 
 /*Tilpasning til forskellige skærmstørrelser*/
 
+/*Tablet Version - Kun små ændringer nødvendige*/
+@media screen and (min-width: 426px) {
+    .mood-img {
+        height: 180px;
+        object-position: 10% 50%;
+    }
+
+    .mood-img-container {
+        height: 180px;
+    }
+
+    
+
+    
+}
+
 /*Sticky bottom nav til mobil og tablet*/
 @media screen and (max-width:768px) {
     .mobil-bottom-nav {
@@ -518,6 +534,12 @@ footer nav ul li a {
 
 
     /*Navigation*/
+    .main-header {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
     nav #bars {
         display: none;
     }
@@ -564,7 +586,7 @@ footer nav ul li a {
     }
 
     .banner-img {
-        height: 310px;
+        height: 260px;
         width: 45%;
         filter: brightness(100%);
         margin-right: 40px;
@@ -593,7 +615,7 @@ footer nav ul li a {
     .phishing-ikon {
         display: flex;
         object-fit: cover;
-        height: 170px;
+        height: 175px;
         margin: 20px 40px 20px 30px;
         align-items: center;
         width: 25%;

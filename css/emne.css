@@ -24,7 +24,7 @@ img {
 .lead-tekst {
     font-size: 18px;
     font-weight: 400;
-    margin-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 /*Sektion - Hvad er phishing?*/
@@ -37,7 +37,7 @@ img {
 }
 
 .phishing-text {
-    margin-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 /*Sektion - Tips*/
@@ -53,7 +53,7 @@ img {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 .tips div {
@@ -110,7 +110,7 @@ div .tip-text {
 /*Sektion - Relaterede guides*/
 .relaterede {
     background-color: #DDE8ED;
-    padding: 1px 0 20px 0;
+    padding: 1px 0 30px 0;
     display: flex;
     flex-direction: column;
 }
@@ -175,7 +175,7 @@ div .tip-text {
 .kilder ul {
     width: 100%;
     overflow-wrap: break-word;
-    padding: 0 10px 20px 25px;
+    padding: 0 10px 30px 25px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -198,6 +198,12 @@ div .tip-text {
 
 /*Desktop Version*/
 @media screen and (min-width: 769px) {
+    /*Navigation*/
+    .navigation ul li:nth-child(2) a {
+        text-decoration: underline 1.5px solid #1F1F1F;
+        text-underline-offset: 5px;
+    }
+
     /*Banner sektion*/
     .banner .intro-tekst {
     order: 0;
@@ -222,7 +228,7 @@ div .tip-text {
     }
 
     .lead-tekst {
-        margin: 5px 10px 20px 30px;
+        margin: 5px 10px 50px 30px;
         font-weight: 500;
         font-size: 24px;
         padding: 0;
@@ -245,12 +251,12 @@ div .tip-text {
     }
 
     .phishing-text {
-        margin-bottom: 30px;
+        padding-bottom: 50px;
     }
 
     /*Sektion - Tips*/
     .tips-text {
-        margin-bottom: 30px;
+        padding-bottom: 30px;
     }
 
     .tips div {
@@ -264,7 +270,7 @@ div .tip-text {
 
     .tips {
         gap: 20px;
-        padding-bottom: 30px;
+        padding-bottom: 50px;
     }
     
     .tips .ikon {
@@ -298,6 +304,11 @@ div .tip-text {
         margin: 0;
     }
 
+    /*Sektion - Husk*/
+    .husk {
+        padding-bottom: 50px;
+    }
+
     /*Sektion - Relaterede*/
     .mood-img-container {
         order: 0;
@@ -317,7 +328,7 @@ div .tip-text {
     }
 
     .relaterede {
-        padding: 30px 0 30px 0;
+        padding: 50px 0;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -344,7 +355,7 @@ div .tip-text {
 
     /*Sektion - Kildeliste*/
     .kilder ul {
-        padding: 0 30px 30px 45px;
+        padding: 0 30px 50px 45px;
         gap: 15px;
     }
 

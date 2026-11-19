@@ -25,6 +25,7 @@ img {
     font-size: 18px;
     font-weight: 400;
     padding-bottom: 30px;
+    padding-top: 0;
 }
 
 /*Sektion - Hvad er phishing?*/
@@ -247,7 +248,7 @@ div .tip-text {
         height: 175px;
         margin: 20px 40px 20px 30px;
         align-items: center;
-        width: 25%;
+        width: 15%;
     }
 
     .phishing-text {
